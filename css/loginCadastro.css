@@ -1,0 +1,64 @@
+.menu-criarconta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(38, 38, 38, 255);
+  margin: 150px auto;
+  padding: 80px 0px 30px;
+  position: relative;
+  border-radius: 10px;
+  text-shadow: 2px 2px #000a;
+  box-shadow: inset -2px -4px #0006;
+}
+
+.menu-criarconta::before {
+  content: "";
+  background: url(/img/PUCCRAFT-18-11-2024.svg) no-repeat;
+  width: 600px;
+  height: 152px;
+  position: absolute;
+  bottom: 380px;
+}
+
+.menu-criarconta a {
+  text-decoration: underline;
+  color: white;
+}
+
+.menu-criarconta p {
+  color: white;
+}
+
+.contaButton {
+  background: rgba(17, 17, 17, 255);
+  border: none;
+  padding: 5px 100px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+.enviar-button {
+  font-family: minecraft;
+  font-size: 1.5rem;
+  color: white;
+  background: rgba(0, 139, 67, 255);
+  margin: 20px 120px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 5px;
+  border: black 2px;
+  text-shadow: 2px 2px #000a;
+  box-shadow: inset -2px -4px #0006;
+}
+
+.label-conta {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 0.9rem;
+  margin: 10px 2px 10px 0px;
+}

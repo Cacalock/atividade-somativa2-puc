@@ -1,0 +1,16 @@
+.menucima {
+  display: grid;
+  grid-template-columns: 600px;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.menubaixo {
+  display: grid;
+  grid-template-columns: 297px 297px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 8px;
+}
