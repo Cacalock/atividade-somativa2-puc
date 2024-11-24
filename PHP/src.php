@@ -1,25 +1,37 @@
-
 <?php
+ if ($_SERVER["REQUEST_METHOD"] == "POST") {
+     $servername = "localhost:3306";
+     $username = "root";
+     $password = "";
+     $dbname = "users";
 
-global $servername;
-global $username;
-global $password;
-global $dbname; 
+     $nick = $_POST["nick"];
+     $email = $_POST["email"];
+     $password = $_POST["password"];
 
-$servername = "localhost:3306";
-$username = "root";
-$password = "";
-$dbname = "users";
+     $conn = new mysqli($servername, $username, $password, $dbname);
 
-$nick    = $_POST["nick"];
-$email   = $_POST["email"];
-$password    = $_POST["password"];
+     if ($conn->connect_error) {
+         die("Falha de conexão: " . $conn->connect_error);
+     }
 
+     $sql = "INSERT INTO users (nick, email, password) VALUES (?, ?, ?)";
 
-$conn = new mysqli($servername, $username, $password, $database);
-if ($conn->connect_error) {
-    die("<strong> Falha de conexão: </strong>" . $conn->connect_error);
+     $stmt = $conn->prepare($sql);
+     if ($stmt) {
+         $stmt->bind_param("sss", $nick, $email, $password);
 
+         if ($stmt->execute()) {
+             echo "Novo registro criado com sucesso";
+         } else {
+             echo "Erro: " . $sql . "<br>" . $stmt->error;
+         }
 
+         $stmt->close();
+     } else {
+         echo "Erro na preparação: " . $conn->error;
+     }
 
-?>
+     $conn->close();
+ }
+ ?>

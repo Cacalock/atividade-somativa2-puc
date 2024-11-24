@@ -6,33 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="descrition" content="">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./Js/src.js"></script>
+  <script src="./js/src.js"></script>
   <title>Login</title>
 </head>
-<div class="logo">
-</div>
-<div class="menu-criarconta">
-  <img class="puc" src="./img/PUCCRAFT-18-11-2024.svg" alt="logo">
-  <div class="menu-conteudo">
-    <div class="menucima">
-      <div class="inputs">
-        <label class="label-conta">EMAIL</label>
-        <input class="contaButton" type="email" name="email" id="email">
-      </div>
-      <div class="inputs">
-        <label class="label-conta">SENHA</label>
-        <input class="contaButton" type="password" name="password" id="password">
-      </div>
-      <button class="enviar-button">Enviar</button>
-      <p>Não tem conta? <a href="/criarConta.html">Cadastre-se</a></p>
-    </div>
-  </div>
 
-  <body class="index-body">
-    <footer class="footer">
-      <p class="rodape">Somativa 2.0.1 - Cassiane</p>
-      <p class="rodape">&copy; 2024 - Projeto de Fundamentos de Programacao Web da PUCPR</p>
-    </footer>
-  </body>
+<body class="index-body">
+  <a class="voltar" href="/index.html">Voltar</a>
+  <main class="menu-criarconta">
+    <img class="puc" src="./img/PUCCRAFT-18-11-2024.svg" alt="logo">
+    <div class="menu-conteudo">
+      <form action="/php/src.php" method="post">
+        <div class="menucima">
+          <div class="inputs">
+            <label class="label-conta">EMAIL</label>
+            <input class="contaButton" type="email" name="email" id="email">
+          </div>
+          <div class="inputs">
+            <label class="label-conta">SENHA</label>
+            <input class="contaButton" type="password" name="password" id="password">
+          </div>
+          <button class="enviar-button">Enviar</button>
+          <p>Não tem conta? <a href="/criarConta.html">Cadastre-se</a></p>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="rodape">Somativa 2.0.1 - Cassiane</p>
+    <p class="rodape">&copy; 2024 - Projeto de Fundamentos de Programacao Web da PUCPR</p>
+  </footer>
+</body>
 
 </html>

@@ -1,0 +1,67 @@
+.main-form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(38, 38, 38, 255);
+    padding: 30px;
+    margin: 100px 350px 100px;
+    border-radius: 10px;
+    box-shadow: inset -2px -4px #0006;
+    justify-content: center;
+}
+
+.main-form h1 {
+    font-family: minecraft;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-size: 2rem;
+}
+
+.introducao-texto {
+    display: flex;
+    gap: 50px;
+    margin: 30px;
+    place-content: center;
+}
+
+.introducao-texto p {
+    font-family: minecraft;
+    color: rgb(150, 149, 149);
+    padding: 4px;
+    font-size: 1.1rem;
+    text-align: justify;
+    text-shadow: 2px 2px #000a;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+    justify-content: baseline;
+    overflow-y: scroll;
+}
+
+.pergunta {
+    padding: 15px;
+    font-family: minecraft;
+    color: rgb(156, 147, 147);
+    font-size: 0.9rem;
+    text-shadow: 2px 2px #000a;
+}
+
+.pergunta input {
+    border: none;
+    padding: 3px;
+    margin: 5px;
+    color: rgb(150, 149, 149);
+    width: auto;
+    border-radius: 4px;
+    background: rgba(17, 17, 17, 255);
+    border: none;
+    padding: 5px 100px;
+    text-shadow: 2px 2px #000a;
+    box-shadow: inset -2px 4px rgba(53, 46, 46, 0.253);
+}
+
+.pergunta label {
+}

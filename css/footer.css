@@ -1,16 +1,22 @@
 .footer {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  left: 0;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
+.voltar,
 .rodape {
-  margin: auto 20px 0px 20px;
-  font-family: "Minecraft", sans-serif;
-  color: white;
-  text-shadow: 2px 2px #000a;
+    margin: auto 20px 0px 20px;
+    font-family: "Minecraft", sans-serif;
+    color: white;
+    text-shadow: 2px 2px #000a;
+}
+
+.voltar {
+    margin: 10px 5px 0px 15px;
+    font-size: 1.3rem;
 }
