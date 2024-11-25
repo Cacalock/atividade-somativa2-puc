@@ -4,95 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="descrition" content="">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/src.js"></script>
-  <title>Questionario</title>
+  <title>Questionário</title>
 </head>
 
 <body class="index-body">
   <main class="main-form">
-    <section class=" menu-form">
-      <h1>Bem-vindo ao Formulario de Preferencias de Minecraft da ADS PUC!</h1>
+    <section class="menu-form">
+      <h1>Bem-vindo ao Formulário de Preferências de Minecraft da ADS PUC!</h1>
       <div class="introducao-texto">
         <p>Estamos entusiasmados em entender melhor como podemos criar uma experiência única e envolvente no Minecraft para
           a nossa comunidade da PUC. Este formulário tem como objetivo coletar suas preferências e ideias, garantindo que o
-          servidor atenda às expectativas de todos. </p>
+          servidor atenda às expectativas de todos.</p>
         <p>Sua opinião é muito importante para nós, e suas respostas nos ajudarão a construir um ambiente de jogo divertido
-          e colaborativo. O questionário é rápido e fácil de preencher, e suas respostas serão mantidas em sigilo.
-          Obrigado por dedicar seu tempo para nos ajudar a criar algo incrível. Vamos começar! </p>
+          e colaborativo. Obrigado por dedicar seu tempo para nos ajudar a criar algo incrível. Vamos começar!</p>
       </div>
-
-      <form class="form" action="post">
+      <form class="form" action="/php/respostas.php" method="post">
+        <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($_GET['user_id'] ?? ''); ?>">
         <div class="pergunta">
-          <div class="part1">
-            <h3>Qual é o seu ano e turma na ADS da PUC?</h3>
-            <input type="text">
-          </div>
-          <div class="pergunta">
-            <h3>Que tipo de servidor você prefere jogar?</h3>
-            <input type="radio" value="sobrevivencia" id="p2a" name="pergunta2">
-            <label for="p2a">Sobrevivência</label>
-            <input type="radio" value="minigames" id="p2b" name="pergunta2">
-            <label for="p2b">Mingames</label>
-            <input type="radio" value="aventuras ou Mods" id="p2c" name="pergunta2">
-            <label for="p2c">Aventuras ou Mods</label>
-            <input type="radio" value="hardecore" id="p2d" name="pergunta2">
-            <label for="p2d">Hardcore</label>
-          </div>
-          <div class="pergunta">
-            <h3>Gostaria de Plugins no jogo?</h3>
-            <input type="radio" value="sim" id="p3a" name="pergunta3">
-            <label for="p3a">Sim</label>
-            <input type="radio" value="sim" id="p3b" name="pergunta3">
-            <label for="p3b">Não</label>
-          </div>
+          <h3>Qual é o seu ano e turma na ADS da PUC?</h3>
+          <input type="text" name="anoTurma" id="anoTurma">
         </div>
-        <div class="part2">
-          <div class="pergunta">
-            <h3>Você prefere um servidor com mods?</h3>
-            <input type="radio" value="sim" id="p4a" name="pergunta4">
-            <label for="p4a">Sim</label>
-            <input type="radio" value="sim" id="p4b" name="pergunta4">
-            <label for="p4b">Não</label>
-            <input type="radio" value="sim" id="p4c" name="pergunta4">
-            <label for="p4c">Talvez</label>
-          </div>
-          <div class="pergunta">
-            <h3>Você gostaria de participar de eventos ou competições dentro do servidor?</h3>
-            <input type="radio" value="sim" id="p5a" name="pergunta5">
-            <label for="p5a">Sim</label>
-            <input type="radio" value="sim" id="p5b" name="pergunta5">
-            <label for="p5b">Não</label>
-            <input type="radio" value="sim" id="p5c" name="pergunta5">
-            <label for="p5c">Talvez</label>
-          </div>
-          <div class="pergunta">
-            <h3>Você apoiaria um cargo Vip para ajudar a manter o servidor?</h3>
-            <input type="radio" value="sim" id="p5a" name="pergunta5">
-            <label for="p5a">Sim</label>
-            <input type="radio" value="sim" id="p5b" name="pergunta5">
-            <label for="p5b">Não</label>
-            <input type="radio" value="sim" id="p5c" name="pergunta5">
-            <label for="p5c">Talvez</label>
-          </div>
+        <div class="pergunta">
+          <h3>Que tipo de servidor você prefere jogar?</h3>
+          <input type="radio" value="sobrevivencia" id="p2a" name="pergunta2">
+          <label for="p2a">Sobrevivência</label>
+          <input type="radio" value="minigames" id="p2b" name="pergunta2">
+          <label for="p2b">Minigames</label>
+          <input type="radio" value="aventuras_ou_mods" id="p2c" name="pergunta2">
+          <label for="p2c">Aventuras ou Mods</label>
+          <input type="radio" value="hardcore" id="p2d" name="pergunta2">
+          <label for="p2d">Hardcore</label>
+        </div>
+        <div class="pergunta">
+          <h3>Gostaria de Plugins no jogo?</h3>
+          <input type="radio" value="sim" id="p3a" name="pergunta3">
+          <label for="p3a">Sim</label>
+          <input type="radio" value="não" id="p3b" name="pergunta3">
+          <label for="p3b">Não</label>
+        </div>
+        <div class="pergunta">
+          <h3>Você prefere um servidor com mods?</h3>
+          <input type="radio" value="sim" id="p4a" name="pergunta4">
+          <label for="p4a">Sim</label>
+          <input type="radio" value="não" id="p4b" name="pergunta4">
+          <label for="p4b">Não</label>
+          <input type="radio" value="talvez" id="p4c" name="pergunta4">
+          <label for="p4c">Talvez</label>
+        </div>
+        <div class="pergunta">
+          <h3>Você gostaria de participar de eventos ou competições dentro do servidor?</h3>
+          <input type="radio" value="sim" id="p5a" name="pergunta5">
+          <label for="p5a">Sim</label>
+          <input type="radio" value="não" id="p5b" name="pergunta5">
+          <label for="p5b">Não</label>
+          <input type="radio" value="talvez" id="p5c" name="pergunta5">
+          <label for="p5c">Talvez</label>
+        </div>
+        <div class="pergunta">
+          <h3>Você apoiaria um cargo Vip para ajudar a manter o servidor?</h3>
+          <input type="radio" value="sim" id="p6a" name="pergunta6">
+          <label for="p6a">Sim</label>
+          <input type="radio" value="não" id="p6b" name="pergunta6">
+          <label for="p6b">Não</label>
+          <input type="radio" value="talvez" id="p6c" name="pergunta6">
+          <label for="p6c">Talvez</label>
         </div>
         <div class="pergunta">
           <h3>Feedback Geral</h3>
-          <label for="">Quais são suas expectativas para um servidor de Minecraft gerido pela ADS PUC?<br></label>
-          <input type="text">
+          <label for="feedback">Quais são suas expectativas para um servidor de Minecraft gerido pela ADS PUC?<br></label>
+          <input type="text" name="feedback" id="feedback">
         </div>
         <div class="pergunta">
-          <h3>Dê sua sujestão</h3>
-          <label for="">Há algo mais que gostaria de sugerir ou comentar? (sistema de recompensas, economia, etc.)<br></label>
-          <input type="text">
+          <h3>Dê sua sugestão</h3>
+          <label for="sugestao">Há algo mais que gostaria de sugerir ou comentar? (sistema de recompensas, economia, etc.)<br></label>
+          <input type="text" name="sugestao" id="sugestao">
         </div>
+        <button type="submit" class="enviar-button">Enviar</button>
       </form>
     </section>
   </main>
   <footer class="footer">
     <p class="rodape">Somativa 2.0.1 - Cassiane</p>
-    <p class="rodape">&copy; 2024 - Projeto de Fundamentos de Programacao Web da PUCPR</p>
+    <p class="rodape">&copy; 2024 - Projeto de Fundamentos de Programação Web da PUCPR</p>
   </footer>
 </body>
 

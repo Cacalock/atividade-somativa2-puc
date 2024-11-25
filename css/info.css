@@ -1,64 +1,64 @@
 .logo {
-  margin: 50px auto 25px;
+    margin: 50px auto 25px;
 }
 
 .article-info {
-  display: flex;
-  justify-content: center;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 #logo-menor {
-  width: none;
-  height: none;
+    width: none;
+    height: none;
 }
 
 .article-info::before {
-  content: "";
-  background: url(/img/enderman.png) no-repeat;
-  width: 400px;
-  height: 384px;
-  position: absolute;
-  left: 250px;
-  top: 50px;
+    content: "";
+    background: url(/img/enderman.png) no-repeat;
+    width: 400px;
+    height: 384px;
+    position: absolute;
+    left: 250px;
+    top: 50px;
 }
 .article-info::after {
-  content: "";
-  background: url(/img/creeper.png);
-  width: 400px;
-  height: 384px;
-  position: absolute;
-  right: 50px;
-  bottom: 125px;
+    content: "";
+    background: url(/img/creeper.png);
+    width: 400px;
+    height: 384px;
+    position: absolute;
+    right: 50px;
+    bottom: 125px;
 }
 
 .server-form {
-  max-width: 800px;
-  width: 90%;
-  height: 500px;
-  margin-bottom: 50px;
-  z-index: 1;
+    max-width: 800px;
+    width: 90%;
+    height: 500px;
+    margin-bottom: 10px;
+    z-index: 1;
 }
 
 .conteudo-info {
-  display: grid;
-  grid: auto 1fr;
+    display: grid;
+    grid: auto 1fr;
 }
 
 .conteudo-info img {
-  width: 32px;
+    width: 32px;
 }
 
 .server-form h3 {
-  margin-left: 10px;
-  font-size: 1.5rem;
-  font-family: "Minecraft";
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-family: "Minecraft";
 }
 .server-form p {
-  font-family: "Minecraft";
-  color: aliceblue;
-  line-height: 1.5;
-  font-size: 1.2rem;
-  grid-column: 2;
-  margin: 20px;
+    font-family: "Minecraft";
+    color: aliceblue;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    grid-column: 2;
+    margin: 20px;
 }
