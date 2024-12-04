@@ -22,6 +22,7 @@ btn.forEach((element) => {
 function block() {
     return sessionStorage.getItem("logado") === "true";
 }
+
 document.getElementById("login").addEventListener("click", function (event) {
     if (!block()) {
         event.preventDefault();

@@ -14,33 +14,7 @@
 [cursor="arrow"] {
     cursor: var(--arrow);
 }
-.bg-white {
-    background-color: #fff;
-}
-.bg-dark {
-    background-color: #000;
-}
-.bg-primary {
-    background-color: #009ac9;
-}
-.bg-danger {
-    background-color: #f30000;
-}
-.bg-warning {
-    background-color: #e5e900;
-}
-.text-dark {
-    color: #000;
-}
-.text-primary {
-    color: #009ac9;
-}
-.text-danger {
-    color: #f30000;
-}
-.text-warning {
-    color: #e5e900;
-}
+
 .dialogue-box {
     padding: 5px;
     outline: 2px solid rgb(247, 247, 247);

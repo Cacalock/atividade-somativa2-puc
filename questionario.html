@@ -23,10 +23,6 @@
       <form class="form" action="/php/respostas.php" method="post">
         <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($_GET['user_id'] ?? ''); ?>">
         <div class="pergunta">
-          <h3>Qual é o seu ano e turma na ADS da PUC?</h3>
-          <input type="text" name="anoTurma" id="anoTurma">
-        </div>
-        <div class="pergunta">
           <h3>Que tipo de servidor você prefere jogar?</h3>
           <input type="radio" value="sobrevivencia" id="p2a" name="pergunta2">
           <label for="p2a">Sobrevivência</label>
@@ -45,22 +41,11 @@
           <label for="p3b">Não</label>
         </div>
         <div class="pergunta">
-          <h3>Você prefere um servidor com mods?</h3>
-          <input type="radio" value="sim" id="p4a" name="pergunta4">
-          <label for="p4a">Sim</label>
-          <input type="radio" value="não" id="p4b" name="pergunta4">
-          <label for="p4b">Não</label>
-          <input type="radio" value="talvez" id="p4c" name="pergunta4">
-          <label for="p4c">Talvez</label>
-        </div>
-        <div class="pergunta">
           <h3>Você gostaria de participar de eventos ou competições dentro do servidor?</h3>
           <input type="radio" value="sim" id="p5a" name="pergunta5">
           <label for="p5a">Sim</label>
           <input type="radio" value="não" id="p5b" name="pergunta5">
           <label for="p5b">Não</label>
-          <input type="radio" value="talvez" id="p5c" name="pergunta5">
-          <label for="p5c">Talvez</label>
         </div>
         <div class="pergunta">
           <h3>Você apoiaria um cargo Vip para ajudar a manter o servidor?</h3>
@@ -68,20 +53,17 @@
           <label for="p6a">Sim</label>
           <input type="radio" value="não" id="p6b" name="pergunta6">
           <label for="p6b">Não</label>
-          <input type="radio" value="talvez" id="p6c" name="pergunta6">
-          <label for="p6c">Talvez</label>
+        </div>
+        <div class="pergunta">
+          <h3>Qual é o seu ano e turma na ADS da PUC?</h3>
+          <input maxlength="20" type="text" name="anoTurma" id="anoTurma">
         </div>
         <div class="pergunta">
           <h3>Feedback Geral</h3>
           <label for="feedback">Quais são suas expectativas para um servidor de Minecraft gerido pela ADS PUC?<br></label>
-          <input type="text" name="feedback" id="feedback">
+          <textarea name="feedback" id="feedback" maxlength="100"></textarea>
         </div>
-        <div class="pergunta">
-          <h3>Dê sua sugestão</h3>
-          <label for="sugestao">Há algo mais que gostaria de sugerir ou comentar? (sistema de recompensas, economia, etc.)<br></label>
-          <input type="text" name="sugestao" id="sugestao">
-        </div>
-        <button type="submit" class="enviar-button">Enviar</button>
+        <button type="submit" class="enviar-button center">Enviar</button>
       </form>
     </section>
   </main>

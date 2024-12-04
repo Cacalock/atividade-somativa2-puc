@@ -1,4 +1,6 @@
 @media (max-width: 800px) {
+    /* index e rodape*/
+
     .logo {
         margin: 50px auto;
     }
@@ -14,6 +16,8 @@
         font-size: 0.8rem;
     }
 
+    /* Info */
+
     .article-info::after,
     .article-info::before {
         display: none;
@@ -21,15 +25,18 @@
 
     .puc {
         left: 110px;
-        bottom: 320px;
+        bottom: 355px;
         height: auto;
     }
     .craft {
-        left: 50px;
+        left: 110px;
+        height: auto;
     }
 }
 
 @media (max-width: 600px) {
+    /* index, input e button*/
+
     .menucima {
         grid-template-columns: 350px;
     }
@@ -40,9 +47,89 @@
     button {
         font-size: 1.08rem;
     }
+
+    .puc {
+        left: 80px;
+        bottom: 365px;
+        height: auto;
+    }
+    .craft {
+        left: 80px;
+        bottom: 440px;
+        height: auto;
+    }
+
+    input {
+        padding: 5px 30px !important;
+    }
+
+    /* Menu cinza */
+
+    .main-cinza h1 {
+        font-size: 1.3rem;
+    }
+
+    .main-cinza a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 550px) {
+    /* botoes, formulario e tabela */
+
+    .enviar-button-grande {
+        width: 100px;
+    }
+
+    .server-form {
+        padding: 10px;
+    }
+
+    .table {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        gap: 5px;
+        place-content: center;
+    }
+
+    .table td,
+    .table th {
+        font-size: 0.7rem !important;
+    }
+
+    .menu-form h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-form p {
+        font-size: 0.8rem;
+    }
+
+    .pergunta {
+        font-size: 0.8rem;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu-form h1 {
+        font-size: 1.2rem;
+    }
+
+    .menu-form p {
+        font-size: 0.6rem;
+    }
+
+    .pergunta {
+        margin: 5px;
+        padding: 3px;
+    }
 }
 
 @media (max-width: 400px) {
+    /* index, rodape e button */
+
     .menucima {
         margin-top: 10px;
         grid-template-columns: 250px;
@@ -56,11 +143,59 @@
     .rodape {
         font-size: 0.69rem;
     }
-}
 
-@media (max-width: 400px) {
+    /* Info */
+
     .article-info img {
         max-width: 0;
         height: 0;
+    }
+
+    .puc {
+        left: 40px;
+        bottom: 365px;
+        height: auto;
+    }
+    .craft {
+        left: 50px;
+        bottom: 440px;
+        height: auto;
+    }
+
+    /*Botoes*/
+
+    .enviar-button {
+        margin: 10px 20px;
+        padding: 10px;
+    }
+
+    .enviar-button-grande {
+        width: 70px;
+    }
+
+    /* Menu cinza */
+
+    .main-cinza h1 {
+        font-size: 1rem;
+    }
+
+    .main-cinza a {
+        font-size: 0.7rem;
+        padding: 3px;
+    }
+
+    /* tabela */
+
+    .table {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        gap: 5px;
+        place-content: center;
+    }
+
+    .table td,
+    .table th {
+        font-size: 0.5rem;
     }
 }

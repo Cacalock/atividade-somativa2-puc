@@ -1,166 +1,73 @@
+/* Fontes */
 @import url("https://fonts.cdnfonts.com/css/minecraft-4");
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol,
-ul {
-    list-style: none;
-}
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
+/* Body */
 body {
     display: grid;
+    margin: 0;
+    padding: 0;
 }
 
+.body-completo {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Fundos */
 .terra-body {
     background: url(/img/terra.svg);
 }
 
 .index-body {
     background: url(/img/background.jpg) no-repeat;
-    background-size: cover;
 }
 
-.second-body {
-    background: url(/img/background.png);
-}
-
+/* Imagens */
 img {
     object-fit: cover;
     object-position: top center;
     max-width: 100%;
-    width: auto;
     height: auto;
 }
 
+/* Logo */
 .logo {
     display: flex;
     justify-content: center;
-    margin: 20px auto 100px;
+    margin: 20px auto;
 }
 
+/* Menu */
+.main-cinza {
+    display: grid;
+    place-items: center;
+    box-shadow: inset -2px -4px #0006;
+    padding: 20px;
+    background: rgba(38, 38, 38, 255);
+    border-radius: 4px;
+    margin-top: 50px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-cinza h1 {
+    font-family: "minecraft", sans-serif;
+    color: white;
+    text-shadow: 2px 2px #000a;
+    margin: 20px;
+    text-align: center;
+}
+
+.main-cinza p {
+    color: rgb(156, 147, 147);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #000a;
+    text-align: center;
+}
+
+/* Botão estilo Minecraft */
 .botao-estilo {
     font-family: "Minecraft", sans-serif;
     background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
@@ -183,4 +90,64 @@ img {
     background: url(/img/bgbtn.svg);
     text-shadow: 2px 2px #202013cc;
     color: #ffffa0;
+}
+
+/* Botão verde */
+.enviar-button-grande,
+.enviar-button {
+    cursor: pointer;
+    font-family: minecraft;
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(0, 139, 67, 255);
+    margin: 20px 120px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid black 1.2px;
+    text-shadow: 2px 2px #000a;
+    box-shadow: inset 0px 3px #41c264;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.enviar-button-grande {
+    width: 150px;
+    margin: 0px 20px;
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    border: solid 2px gray;
+    margin: 15px;
+    max-width: 100%;
+}
+
+table th,
+table td {
+    border: solid 2px gray;
+    padding: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+table td {
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Botões de sair e voltar */
+
+.sair,
+.voltar {
+    margin: 10px 5px 0px 15px;
+    font-size: 1.3rem;
+    padding: 5px;
+    text-wrap: wrap;
+}
+
+.sair {
+    display: flex;
+    justify-content: space-between;
 }

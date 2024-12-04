@@ -20,12 +20,12 @@
     width: 600px;
     height: 152px;
     position: absolute;
-    left: 125px;
-    bottom: 380px;
+    left: 130px;
+    bottom: 420px;
 }
 
 .puc {
-    bottom: 310px;
+    bottom: 350px;
 }
 
 .menu-criarconta a {
@@ -49,20 +49,6 @@
     display: flex;
     flex-direction: column;
     margin: 0px auto;
-}
-
-.enviar-button {
-    font-family: minecraft;
-    font-size: 1.5rem;
-    color: white;
-    background: rgba(0, 139, 67, 255);
-    margin: 20px 120px;
-    padding: 10px;
-    align-items: center;
-    border-radius: 5px;
-    border: solid black 1.2px;
-    text-shadow: 2px 2px #000a;
-    box-shadow: inset 0px 3px #41c264;
 }
 
 .label-conta {

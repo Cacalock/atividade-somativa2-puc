@@ -1,11 +1,7 @@
+/* Imagem */
+
 .logo {
     margin: 50px auto 25px;
-}
-
-.article-info {
-    display: flex;
-    justify-content: center;
-    position: relative;
 }
 
 #logo-menor {
@@ -13,15 +9,29 @@
     height: none;
 }
 
+.article-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Decoração enderman*/
+
 .article-info::before {
     content: "";
-    background: url(/img/enderman.png) no-repeat;
+    background: url(../img/enderman.png) no-repeat;
     width: 400px;
     height: 384px;
     position: absolute;
     left: 250px;
     top: 50px;
 }
+
+/* Decoração creeper*/
+
 .article-info::after {
     content: "";
     background: url(/img/creeper.png);
@@ -32,21 +42,55 @@
     bottom: 125px;
 }
 
+/* Conteudo info*/
+
+ul.info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.conteudo-info {
+    margin-bottom: 20px;
+}
+
+.conteudo-info img {
+    width: 32px;
+}
+
+.conteudo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.conteudo-header img {
+    margin-right: 10px;
+}
+
+.conteudo-header h3 {
+    font-size: 1.5rem;
+    font-family: "Minecraft";
+    margin: 0;
+}
+
+.server-form p {
+    font-family: "Minecraft";
+    color: aliceblue;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    text-align: justify;
+}
+
+/* Server-form*/
+
 .server-form {
     max-width: 800px;
     width: 90%;
     height: 500px;
     margin-bottom: 10px;
     z-index: 1;
-}
-
-.conteudo-info {
-    display: grid;
-    grid: auto 1fr;
-}
-
-.conteudo-info img {
-    width: 32px;
 }
 
 .server-form h3 {
